@@ -25,7 +25,22 @@ num_tuple = 23, 4, 5, 66, 78, 96,97
 
 for nums in num_tuple:
     total+= nums
-print(f'Sum of the total tuple value: {total}')     
+print(f'Sum of the total tuple value: {total}')    
+
+for mark in marks:
+    value = marks[mark]
+    print(mark , value)
+
+for subject, mark in marks.items():
+    print(subject, mark)
+
+
+# enumerate use for index 
+
+for index , num in enumerate(numbers):
+    print(index ,num)
+
+    
 
 
 
