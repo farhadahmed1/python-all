@@ -1,10 +1,14 @@
 # laptop , phone , watch , computer
 
-class Laptop :
-    def __init__(self ,brand, price , color , display_size  ):
-        self.brand = brand
-        self.price = price
+class  Device:
+    def __init__(self ,brand , price , color):
+        self.brand = brand 
+        self.price = price 
         self.color = color
+
+class Laptop (Device):
+    def __init__(self ,brand, price , color , display_size  ):
+        super().__init__(brand, price, color)
         self.display_size = display_size
 
     def run (self):
@@ -35,4 +39,24 @@ class Watch :
     def is_digital (self ):
         return self.watch_type == 'digital'
     
+
+class Manager : 
+    def __init__(self ,name , salary  ,  experience , 
+                 designation ,): 
+        pass 
+    def day_total_sales(self):
+        pass
+
+class SalesPerson: 
+    def __init__(self ,name , salary  ,  experience , 
+                 designation , commission ): 
+        pass   
+
+    def handle_customer (self):
+        pass
+
+lenovo  = Laptop ('lenovo ' , 45000 , 'gray' , '1000Gb')   
+print(lenovo.color) 
+
+
 
