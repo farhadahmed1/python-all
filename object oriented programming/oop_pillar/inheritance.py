@@ -34,7 +34,15 @@ class   Bus (Vehicle):
         if remainder >= 0 :
             return Ticket(customer_name)
         return 'No tickets available for you. you  '
-        
+
+class AcBus(Bus): 
+    def __init__(self):
+        pass 
+class Minibus(Bus):
+    def __init__(self):
+        pass     
+
+
 class Ticket :
     def __init__(self , owner) -> None : 
         self.owner = owner
